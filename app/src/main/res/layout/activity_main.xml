@@ -1,68 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
-    android:layout_marginTop="200dp"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:layout_marginTop="200dp"
     tools:context=".MainActivity">
 
-    <LinearLayout
+    <Button
+        android:id="@+id/perfettomemory"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="304dp"
-        android:orientation="vertical"
-        android:padding="16dp">
+        android:text="Prefetto Memory" />
 
-        <Button
-            android:id="@+id/btnSmallObjects"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Create Many Small Objects" />
-
-        <Button
-            android:id="@+id/btnBigArrays"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="12dp"
-            android:text="Create Big Arrays" />
-
-        <Button
-            android:id="@+id/btnHolderTree"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="12dp"
-            android:text="Create Holder Tree" />
-
-        <Button
-            android:id="@+id/btnSharedGraph"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="12dp"
-            android:text="Create Shared Graph" />
-
-        <Button
-            android:id="@+id/btnLeakActivity"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="12dp"
-            android:text="Leak Activity" />
-
-        <Button
-            android:id="@+id/btnClearAll"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="12dp"
-            android:text="Clear All" />
-
-        <TextView
-            android:id="@+id/statusText"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="24dp"
-            android:textSize="16sp" />
-    </LinearLayout>
-
-
-</ScrollView>
+    <Button
+        android:id="@+id/start_opengl_es"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="start openGL es" />
+</LinearLayout>

@@ -1,11 +1,10 @@
-package com.astro.tao
+package com.astro.tao.perfetto.memory
 
-import com.astro.tao.model.SharedRefHolder
-import com.astro.tao.model.SmallHolder
-import com.astro.tao.model.TinyObject
+import com.astro.tao.perfetto.memory.model.SharedRefHolder
+import com.astro.tao.perfetto.memory.model.SmallHolder
+import com.astro.tao.perfetto.memory.model.TinyObject
 
-//用静态字段把对象留住，确保你 dump 时它们还在。
-object MemoryStore {
+object MemoryStoreOther {
     val smallObjects: MutableList<TinyObject?> = ArrayList<TinyObject?>()
     val bigArrays: MutableList<ByteArray?> = ArrayList<ByteArray?>()
     val smallHolders: MutableList<SmallHolder?> = ArrayList<SmallHolder?>()

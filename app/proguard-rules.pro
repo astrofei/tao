@@ -19,5 +19,5 @@
 # If you keep the line number information, uncomment this to
 # hide the original source file name.
 #-renamesourcefileattribute SourceFile
--keep class com.astro.tao.model.TinyObject { *; }
--keep class com.astro.tao.MemoryStore { *; }
+-keep class com.astro.tao.perfetto.memory.model.TinyObject { *; }
+-keep class com.astro.tao.perfetto.memory.MemoryStore { *; }
