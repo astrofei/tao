@@ -3,6 +3,7 @@ package com.astro.tao
 
 import android.content.Intent
 import android.os.Bundle
+import android.util.Log
 import android.view.View
 import android.widget.Button
 import android.widget.TextView
@@ -12,6 +13,7 @@ import com.astro.tao.perfetto.memory.MemoryStore
 import com.astro.tao.perfetto.memory.MemoryStoreOther
 import com.astro.tao.perfetto.memory.PerfettoMemoryActivity
 import com.astro.tao.perfetto.memory.utils.MemoryBuilder
+import com.astro.tao.testupdateui.TestUpdateUI
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -24,5 +26,9 @@ class MainActivity : AppCompatActivity() {
             startActivity(Intent(this, PerfettoMemoryActivity::class.java))
         })
 
+        val testUpdateUI = findViewById<Button>(R.id.test_update_ui)
+        testUpdateUI.setOnClickListener (View.OnClickListener { v: View? ->
+            startActivity(Intent(this, TestUpdateUI::class.java))
+        })
     }
 }
